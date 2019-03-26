@@ -1,0 +1,3 @@
+class LSMTree (dir: String) {
+
+}
