@@ -1,0 +1,22 @@
+plugins {
+  id 'java'
+  id 'scala'
+  id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  implementation 'org.scala-lang:scala-library:2.12.8'
+  testImplementation 'org.scalatest:scalatest_2.11:3.0.0'
+  testImplementation 'junit:junit:4.12'
+  compile group: 'org.json4s', name: 'json4s-jackson_2.12', version: '3.6.5'
+  compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.22'
+  compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+  compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+application {
+}

@@ -1,4 +1,4 @@
-package util
+package rajkumars.info.util
 
 import org.json4s._
 import org.json4s.jackson.Serialization
@@ -12,9 +12,8 @@ object Json {
   implicit val formats = Serialization.formats(NoTypeHints)
 
   // Json Serialization
-  def dump[A <: AnyRef](o: A)(
-      implicit m: ClassManifest[A]): String = write(o)
+  def dump[A <: AnyRef](o: A)(implicit m: ClassManifest[A]): String = write(o)
 
-  def load[A: Manifest](s: String)(
-      implicit m: ClassManifest[A]): Option[A] = Try(read[A](s)).toOption
+  def load[A: Manifest](s: String)(implicit m: ClassManifest[A]): Option[A] =
+    Try(read[A](s)).toOption
 }

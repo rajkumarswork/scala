@@ -1,9 +1,10 @@
 scalaVersion := "2.12.8"
 
 libraryDependencies ++= Seq(
-  "com.github.wookietreiber" %% "scala-chart" % "0.5.1",
-  "org.apache.commons" % "commons-math3" % "3.2",
+  "commons-io" % "commons-io" % "2.6",
+  "commons-codec" % "commons-codec" % "1.12",
   "org.json4s" %% "json4s-jackson" % "3.6.5",
-  "org.scalatest" %% "scalatest" % "3.0.5",
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+  "com.typesafe.akka" %% "akka-actor" % "2.5.22",
+  "org.scalatest" %% "scalatest" % "3.1.0-RC1" % Test,
+  "com.novocode" % "junit-interface" % "0.11" % Test
 )
