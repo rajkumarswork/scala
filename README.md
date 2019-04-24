@@ -22,4 +22,9 @@ A collection of useful scala tools and algorithms
 8. Some tools for working with Iterators
 
 ---
+## Networking
+1. TCPUtil: Generic TCP client and server that executes a given function f() on each write to it
+1. UDPUtil: Generic UDP client and a server that executes a given function f() on each packet
+
+---
 
